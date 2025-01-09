@@ -69,7 +69,7 @@ unexport GREP_OPTIONS
 #
 # To put more focus on warnings, be less verbose as default
 # Use 'make V=1' to see the full commands
-
+KBUILD_VERBOSE ?= 1
 ifeq ("$(origin V)", "command line")
   KBUILD_VERBOSE = $(V)
 endif
